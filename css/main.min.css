@@ -1,0 +1,2 @@
+.hero,.about-wrapper,.contact-wrapper{display:grid;grid-template-columns:50% 580px;justify-content:space-between}p,h1,h2,h3,h4,h5,h6{margin:0}ul,ol{padding:0;margin:0}img{display:block;max-width:100%;height:auto}*::before,*::after{box-sizing:border-box}.link{text-decoration:none}.list{list-style:none}.section{padding:60px 0px}body{font-family:"Lato",sans-serif;color:#474747;background-color:#fbfbfb;font-size:14px}.container{margin:0 auto;padding:0 15px;width:1450px}.contact-form{display:flex;flex-direction:column}
+/*# sourceMappingURL=main.min.css.map */

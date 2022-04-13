@@ -1,0 +1,8 @@
+.contact-wrapper {
+  @extend %grid-two-columns;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}

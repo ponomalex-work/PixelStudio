@@ -1,0 +1,12 @@
+// placeholder объявляется через %, подключается к нужному классу через @extend %...
+// в результате css-сеелкторы к которым подключен placeholder выносятся вверх css-документа и объединяются через запятую с со свойствами из placeholder
+
+// %flex-container {
+//   display: flex;
+// }
+
+%grid-two-columns {
+  display: grid;
+  grid-template-columns: 50% 580px;
+  justify-content: space-between;
+}

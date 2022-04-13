@@ -1,0 +1,10 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/base';
+@import './base/container';
+
+@import './layout/welcome';
+@import './layout/about';
+@import './layout/contact';
