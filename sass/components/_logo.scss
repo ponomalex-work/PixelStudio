@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  padding: 15px 0 19px;
+
+  picture {
+    margin-right: 19px;
+  }
+
+  &-text {
+    padding-top: 8px;
+    @include font(30px, 36px);
+    color: $light-colored;
+  }
+}

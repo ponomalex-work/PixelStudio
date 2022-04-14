@@ -1,3 +1,18 @@
 .about-wrapper {
   @extend %grid-two-columns;
 }
+
+.quote__red {
+  @extend %quote;
+  border-color: $medium-colored;
+}
+
+.quote__blue {
+  @extend %quote;
+  border-color: $quote-blue;
+}
+
+.quote__green {
+  @extend %quote;
+  border-color: $quote-green;
+}

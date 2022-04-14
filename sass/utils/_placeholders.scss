@@ -10,3 +10,35 @@
   grid-template-columns: 50% 580px;
   justify-content: space-between;
 }
+
+%quote {
+  height: 140px;
+  padding-top: 40px;
+  padding-left: 59px;
+  padding-right: 31px;
+  border-left: 3px solid;
+
+  background-color: $light-color;
+
+  font-style: italic;
+  blockquote {
+    position: relative;
+    margin: 0;
+    &::before {
+      content: '';
+      position: absolute;
+      transform: translate(-100%, -100%);
+      display: inline-block;
+      height: 20px;
+      width: 23px;
+      background-image: url(../images/icons/a-icon-quote.png);
+    }
+  }
+}
+
+%dark-cursor {
+  cursor: url(../images/cursor/cursor-dark.png), pointer;
+}
+%light-cursor {
+  cursor: url(../images/cursor/cursor-light.png), pointer;
+}

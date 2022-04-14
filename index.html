@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,43 +19,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Document</title>
+    <title>PixelStudio</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="menu">
-          <a class="link logo" href="index.html"><h1>PixelStudio</h1></a>
+          <a class="link logo" href="index.html"
+            ><picture
+              ><source
+                srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x"
+                type="image/webp" />
+              <source
+                srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x"
+                type="image/webp" />
+              <img src="./images/Logo.png" alt="logo" width="66"
+            /></picture>
+            <h1 class="logo-text">PixelStudio</h1></a
+          >
           <ul class="navigation-list list">
             <li class="navigation-item">
               <a
                 class="active-navigation-link navigation-link link"
-                href="./index.html"
+                href="#home"
                 >Home</a
               >
             </li>
             <li class="navigation-item">
-              <a class="navigation-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navigation-link link" href="#">Portfolio</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link link" href="">My work</a>
+              <a class="navigation-link link" href="#">My work</a>
             </li>
-
             <li class="navigation-item">
-              <a class="navigation-link link" href="">About me</a>
+              <a class="navigation-link link" href="#about">About me</a>
             </li>
-
             <li class="navigation-item">
-              <a class="navigation-link link" href="">Element</a>
+              <a class="navigation-link link" href="#">Element</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="welcome">
+      <section class="welcome" id="home">
         <div class="container">
           <h2 class="section-header">Welсome!</h2>
           <div class="hero">
@@ -90,7 +101,6 @@
                         ./images/slider/alex-gruber-pz_hAv6ER7c-unsplash.webp      1x,
                         ./images/slider/alex-gruber-pz_hAv6ER7c-unsplash@2x.webp   2x
                       "
-                      sizes="580px"
                       type="image/webp" />
                     <source
                       srcset="
@@ -98,11 +108,11 @@
                         ./images/slider/alex-gruber-pz_hAv6ER7c-unsplash.jpg      1x,
                         ./images/slider/alex-gruber-pz_hAv6ER7c-unsplash@2x.jpg   2x
                       "
-                      sizes="580px"
                       type="image/jpg" />
                     <img
                       src="./images/slider/alex-gruber-pz_hAv6ER7c-unsplash.jpg"
                       alt="grape bunch"
+                      width="580"
                   /></picture>
                   <span class="slider-item-title">Magic grape</span>
                 </div>
@@ -146,7 +156,7 @@
           </ul>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="section-header">About me</h2>
           <div class="about-wrapper">
@@ -164,34 +174,28 @@
                 Discovery Education’s Comet Design System.
               </p>
               <ul class="list">
-                <li>
-                  <blockoute>
-                    <p>
-                      Advantages for the customers: using the same design
-                      language for the complex interface, or even different
-                      digital channels, results in product consistency and the
-                      reduction of cognitive load for the users.
-                    </p>
-                  </blockoute>
+                <li class="quote__red">
+                  <blockquote>
+                    Advantages for the customers: using the same design language
+                    for the complex interface, or even different digital
+                    channels, results in product consistency and the reduction
+                    of cognitive load for the users.
+                  </blockquote>
                 </li>
-                <li>
-                  <blockoute>
-                    <p>
-                      This is our journey to the the simplest and most beautiful
-                      banking design in the world, as we see it. Light Bank was
-                      created by the UXDA team in order to inspire change.
-                    </p>
-                  </blockoute>
+                <li class="quote__blue">
+                  <blockquote>
+                    This is our journey to the the simplest and most beautiful
+                    banking design in the world, as we see it. Light Bank was
+                    created by the UXDA team in order to inspire change.
+                  </blockquote>
                 </li>
-                <li>
-                  <blockoute>
-                    <p>
-                      We encourage you to go one step further beyond average and
-                      create the best financial solutions that your customers
-                      are seeking. We hope you can use this UX design case study
-                      as a guide to get there.
-                    </p>
-                  </blockoute>
+                <li class="quote__green">
+                  <blockquote>
+                    We encourage you to go one step further beyond average and
+                    create the best financial solutions that your customers are
+                    seeking. We hope you can use this UX design case study as a
+                    guide to get there.
+                  </blockquote>
                 </li>
               </ul>
               <h3>Heading Levels and Special Cases</h3>
@@ -245,7 +249,6 @@
                           ./images/gallery/Group2.webp      1x,
                           ./images/gallery/Group2@2x.webp   2x
                         "
-                        sizes="136px"
                         type="image/webp" />
                       <source
                         srcset="
@@ -253,12 +256,12 @@
                           ./images/gallery/Group2.jpg      1x,
                           ./images/gallery/Group2@2x.jpg   2x
                         "
-                        sizes="136px"
                         type="image/jpg" />
                       <img
                         class="gallery-card_image"
                         src="./images/gallery/Group2.jpg"
                         alt="clatch and headphones"
+                        width="136"
                     /></picture>
                   </div>
                 </li>
@@ -271,7 +274,6 @@
                           ./images/gallery/Group5.webp      1x,
                           ./images/gallery/Group5@2x.webp   2x
                         "
-                        sizes="136px"
                         type="image/webp" />
                       <source
                         srcset="
@@ -279,12 +281,12 @@
                           ./images/gallery/Group5.jpg      1x,
                           ./images/gallery/Group5@2x.jpg   2x
                         "
-                        sizes="136px"
                         type="image/jpg" />
                       <img
                         class="gallery-card_image"
                         src="./images/gallery/Group5.jpg"
                         alt="pineapple"
+                        width="136"
                     /></picture>
                   </div>
                 </li>
@@ -297,7 +299,6 @@
                           ./images/gallery/Group6.webp      1x,
                           ./images/gallery/Group6@2x.webp   2x
                         "
-                        sizes="136px"
                         type="image/webp" />
                       <source
                         srcset="
@@ -305,12 +306,12 @@
                           ./images/gallery/Group6.jpg      1x,
                           ./images/gallery/Group6@2x.jpg   2x
                         "
-                        sizes="136px"
                         type="image/jpg" />
                       <img
                         class="gallery-card_image"
                         src="./images/gallery/Group6.jpg"
                         alt="food"
+                        width="136"
                     /></picture>
                   </div>
                 </li>
@@ -323,7 +324,6 @@
                           ./images/gallery/Group7.webp      1x,
                           ./images/gallery/Group7@2x.webp   2x
                         "
-                        sizes="136px"
                         type="image/webp" />
                       <source
                         srcset="
@@ -331,12 +331,12 @@
                           ./images/gallery/Group7.jpg      1x,
                           ./images/gallery/Group7@2x.jpg   2x
                         "
-                        sizes="136px"
                         type="image/jpg" />
                       <img
                         class="gallery-card_image"
                         src="./images/gallery/Group7.jpg"
                         alt="beach"
+                        width="136"
                     /></picture>
                   </div>
                 </li>
@@ -349,7 +349,6 @@
                           ./images/gallery/Group8.webp      1x,
                           ./images/gallery/Group8@2x.webp   2x
                         "
-                        sizes="136px"
                         type="image/webp" />
                       <source
                         srcset="
@@ -357,12 +356,12 @@
                           ./images/gallery/Group8.jpg      1x,
                           ./images/gallery/Group8@2x.jpg   2x
                         "
-                        sizes="136px"
                         type="image/jpg" />
                       <img
                         class="gallery-card_image"
                         src="./images/gallery/Group8.jpg"
                         alt="mountains"
+                        width="136"
                     /></picture>
                   </div>
                 </li>
@@ -375,7 +374,6 @@
                           ./images/gallery/Group9.webp      1x,
                           ./images/gallery/Group9@2x.webp   2x
                         "
-                        sizes="136px"
                         type="image/webp" />
                       <source
                         srcset="
@@ -383,31 +381,45 @@
                           ./images/gallery/Group9.jpg      1x,
                           ./images/gallery/Group9@2x.jpg   2x
                         "
-                        sizes="136px"
                         type="image/jpg" />
                       <img
                         class="gallery-card_image"
                         src="./images/gallery/Group9.jpg"
                         alt="seaside"
+                        width="136"
                     /></picture>
                   </div>
                 </li>
               </ul>
               <h3>Links</h3>
               <ul class="links-list list">
-                <li class="links-list-el">Themeforest</li>
-                <li class="links-list-el">GraphicRiver</li>
-                <li class="links-list-el">CodeCanyon</li>
-                <li class="links-list-el">ActiveDen</li>
-                <li class="links-list-el">3DOcean</li>
-                <li class="links-list-el">VideoHive</li>
-                <li class="links-list-el">Audiojungle</li>
+                <li class="links-list-el">
+                  <a class="link" href="#">Themeforest</a>
+                </li>
+                <li class="links-list-el">
+                  <a class="link" href="#">GraphicRiver</a>
+                </li>
+                <li class="links-list-el">
+                  <a class="link" href="#">CodeCanyon</a>
+                </li>
+                <li class="links-list-el">
+                  <a class="link" href="#">ActiveDen</a>
+                </li>
+                <li class="links-list-el">
+                  <a class="link" href="#">3DOcean</a>
+                </li>
+                <li class="links-list-el">
+                  <a class="link" href="#">VideoHive</a>
+                </li>
+                <li class="links-list-el">
+                  <a class="link" href="#">Audiojungle</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2 class="section-header">Contact</h2>
           <div class="contact-wrapper">
@@ -498,30 +510,50 @@
               <address>
                 <ul class="list">
                   <li>
-                    <a
-                      class="link"
-                      target="_blank"
-                      href="https://www.google.com.ua/maps?hl=en&tab=ll&authuser=0"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src="./images/icons/a-icon-address.png"
-                        alt="house"
-                      />
-                      <ul class="list">
-                        <li>Company name</li>
-                        <li>798 Street name</li>
-                        <li>999 00 City name</li>
-                      </ul>
-                    </a>
+                    <img
+                      src="./images/icons/a-icon-address.png"
+                      alt="house"
+                      width="24"
+                    />
+                    <ul class="list">
+                      <li>Company name</li>
+                      <li>
+                        <a
+                          class="link"
+                          target="_blank"
+                          href="https://www.google.com.ua/maps?hl=en&tab=ll&authuser=0"
+                          rel="noopener noreferrer"
+                          >798 Street name</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="link"
+                          target="_blank"
+                          href="https://www.google.com.ua/maps?hl=en&tab=ll&authuser=0"
+                          rel="noopener noreferrer"
+                          >999 00 City name</a
+                        >
+                      </li>
+                    </ul>
                   </li>
                   <li>
+                    <img
+                      src="./images/icons/a-icon-phone.png"
+                      alt="house"
+                      width="24"
+                    />
                     Phone:
                     <a class="link" href="tel:+000987654321"
                       >+000 987 654 321</a
                     >
                   </li>
                   <li>
+                    <img
+                      src="./images/icons/a-icon-email.png"
+                      alt="house"
+                      width="24"
+                    />
                     Email :
                     <a class="link" href="mailto:sales@yourcompany.com"
                       >sales@yourcompany.com</a
@@ -534,6 +566,83 @@
         </div>
       </section>
     </main>
-    <footer><div class="container"></div></footer>
+    <footer>
+      <div class="container">
+        <div>
+          <a href="index.html" class="link logo-text">PixelStudio</a>
+
+          <p>
+            A true business companion a true business companion a true business
+            companion A true business companion a true business companion a true
+            business companion
+          </p>
+          <h3>SOCIAL</h3>
+          <div class="social-links">
+            <ul class="list">
+              <li class="social-links-item">
+                <a class="social-link"
+                  ><img src="./images/icons/a-icon-youtube.png" alt="youtube"
+                /></a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link"
+                  ><img src="./images/icons/a-icon-youtube.png" alt="youtube"
+                /></a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link"
+                  ><img src="./images/icons/a-icon-youtube.png" alt="youtube"
+                /></a>
+              </li>
+              <li class="social-links-item">
+                <a class="social-link"
+                  ><img src="./images/icons/a-icon-youtube.png" alt="youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="list">
+          <li>
+            <h3>FEATURES</h3>
+            <ul class="list">
+              <li><a class="link" href="#">Engagement</a></li>
+              <li><a class="link" href="#">Retention</a></li>
+              <li><a class="link" href="#">Funnels</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3>RESOURCES</h3>
+            <ul class="list">
+              <li><a class="link" href="#">Enterprice</a></li>
+              <li><a class="link" href="#">SaaS</a></li>
+              <li><a class="link" href="#">Financial services</a></li>
+              <li><a class="link" href="#">Consumer Tech</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3>MENU</h3>
+            <ul class="list">
+              <li><a class="link" href="#home">Home</a></li>
+              <li><a class="link" href="#">Portfolio</a></li>
+              <li><a class="link" href="#">My work</a></li>
+              <li><a class="link" href="#about">About me</a></li>
+              <li><a class="link" href="#">Element</a></li>
+              <li><a class="link" href="#contact">Contact</a></li>
+            </ul>
+          </li>
+          <li>
+            <h3>INFORMATION</h3>
+            <ul class="list">
+              <li><a class="link" href="#">About us</a></li>
+              <li><a class="link" href="#">Terms & Conditions</a></li>
+              <li><a class="link" href="#">User's guide</a></li>
+              <li><a class="link" href="#">Support center</a></li>
+              <li><a class="link" href="#">Press info</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

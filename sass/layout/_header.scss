@@ -1,0 +1,76 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  background-color: $main-color;
+
+  a:hover {
+    @extend %light-cursor;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  li:not(:last-child) a {
+    padding: 39px 10px 39px 10px;
+    margin: 0 12px 0px 13px;
+  }
+  li:last-child a {
+    padding: 39px 0 39px 10px;
+    margin: 0 0 0 13px;
+  }
+}
+
+.navigation-link {
+  @include font(18px, 22px, 400);
+  display: block;
+  color: $light-color;
+  transition: color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    color: $hover-nav-link;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    left: -10px;
+    padding: 0 10px 0 10px;
+    border-bottom: 1px solid $hover-nav-link;
+    transform: scaleX(0);
+    transition: transform 250ms $time-function;
+    box-sizing: content-box;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+.active-navigation-link {
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    border-bottom: 1px solid $light-color;
+    transform: scale(1);
+    transition: all 250ms $time-function;
+  }
+  &:hover::after {
+    border-color: $hover-nav-link;
+  }
+}

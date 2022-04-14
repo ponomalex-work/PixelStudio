@@ -1,3 +1,35 @@
+// general
 $main-font: 'Lato', sans-serif;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 $main-color: #474747;
+$light-color: #ffffff;
 $main-background-color: #fbfbfb;
+$normal-border-color: #a6a6a6;
+$light-colored: #ec6767;
+$medium-colored: #cf5858;
+$strong-colored: #b64747;
+$quote-blue: #aab6ff;
+$quote-green: #6be4d5;
+
+// buttons
+$primary-btn-color: $light-colored;
+$hover-btn-color: $medium-colored;
+$active-btn-color: $strong-colored;
+
+// radio & checkbox
+$hover-mark-color: #dedbdb;
+$active-mark-color: $main-color;
+
+// inputs
+$hover-border-color: $normal-border-color;
+$active-border-color: $main-color;
+$normal-placeholder-color: $normal-border-color;
+$hover-placeholder-color: #838383;
+$focus-placeholder-color: $main-color;
+
+// links
+$normal-link-color: $main-color;
+$hover-link-color: $medium-colored;
+$normal-mail-color: $light-colored;
+$hover-nav-link: rgba(255, 255, 255, 0.6);

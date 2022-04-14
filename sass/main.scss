@@ -5,6 +5,14 @@
 @import './base/base';
 @import './base/container';
 
+@import './components/logo';
+@import './components/title';
+@import './components/portfolio-list';
+@import './components/input';
+@import './components/social-links';
+
+@import './layout/header';
 @import './layout/welcome';
 @import './layout/about';
 @import './layout/contact';
+@import './layout/footer';
